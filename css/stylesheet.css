@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url(../Images/wesley-tingey-AZtMXheXnWc-unsplash.jpg);
+  background-position-x: center;
+  background-size: cover;
+}
+
+/*Navbar*/
+.container-fluid {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-item {
+    font-size: 12px;
+    color: rgb(43, 39, 39);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .navbar-nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item {
+    font-size: 20px;
+    padding-right: 50px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    transition-property: font-size color;
+  }
+
+  .nav-link:hover {
+    font-size: 25px;
+  }
+}
+
+/*Above Experience*/
+#image {
+  width: 100px;
+  height: 100px;
+  border-radius: 55%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  border: 1px solid black;
+}
+
+.intro {
+  background-color:white;
+  opacity: 95%;
+  width: 100%;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+  }
+  #image {
+    border-radius: 55%;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.quote {
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+  padding: 2%;
+}
+@media screen and (max-width: 450px) {
+  .quote {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .quote {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .quote {
+    font-size: 25px;
+    width: 100%;
+  }
+}
+
+#aboutme {
+  border: 1px solid black;
+  margin: auto;
+  font-size: 12px;
+  width: 90%;
+  padding: 2%;
+  margin-top: 25px;
+  background-color: white;
+  opacity: 75%;
+}
+
+@media screen and (min-width: 750px) {
+  #aboutme {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1172px) {
+  #aboutme {
+    padding-top: 5px;
+    font-size: 18px;
+    padding: 5px;
+  }
+}
+
+/*Headers*/
+h1 {
+  font-size: 40px;
+}
+
+@media screen and (min-width: 850px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1172px) {
+  h1 {
+    font-size: 50px;
+    padding-top: 10px;
+    margin: auto;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  padding: 5%;
+  color: rgb(3, 3, 3);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 750px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  padding: 3%;
+}
+@media screen and (min-width: 750px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
+h4 {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 750px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+/*Experience*/
+.worklist {
+  text-align: left;
+  font-size: 12px;
+  margin: auto;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .worklist {
+    font-size: 18px;
+    padding-left: 15px;
+    padding: 5%;
+  }
+}
+.col {
+  border: 1px black solid;
+  grid-template-columns: 30% 30% 40%;
+  background-color: white;
+  opacity: 75%;
+  margin-left: 5px;
+}
+@media screen and (max-width: 415px) {
+  .col {
+    margin-top: 5px;
+  }
+}
+
+.row {
+  width: 95%;
+  margin: auto;
+}
+
+/*Education*/
+.eduqualification {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .eduqualification {
+    font-size: 10px;
+  }
+
+  .eduplace {
+    font-size: 20px;
+  }
+}
+
+.edu {
+  border: 1px solid black;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  opacity: 75%;
+  margin-bottom: 5px;
+}
+
+/*Skills*/
+#carouselExampleControls {
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 340px) {
+  #carouselExampleControls {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+.d-block {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 30%;
+}
+
+.caption {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+/*Interets*/
+.card {
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 640px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 978px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1172px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.card-img-top {
+  height: 10rem;
+}
+
+@media screen and (max-width: 336px) {
+  .card-img-top {
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+  }
+}
+
+/*Footer*/
+
+@media screen and (min-width: 700px) {
+  .foot {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    opacity: 85%;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+/*Social*/
+.icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 55%;
+  padding-top: 5px;
+}
+
+.link3 {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  #socials {
+    font-size: 25px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 703px) {
+  .icon {
+    width: 65px;
+    height: 65px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .icon {
+    border-radius: 55%;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    transition: width height;
+  }
+}
+.icon:hover {
+  width: 80px;
+  height: 80px;
+  animation: icon 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+
+@keyframes icon {
+  0% {
+    transform: scale(1.5) translateY(0);
+  }
+  20% {
+    transform: scale(1.5) translateY(-5px);
+  }
+  30% {
+    transform: scale(1.5) translateY(5px);
+  }
+  50% {
+    transform: scale(1.5) translateY(-5px);
+  }
+  60% {
+    transform: scale(1.5) translateY(5px);
+  }
+  100% {
+    transform: scale(1.5) translateY(0);
+  }
+}
+
+/*Contact*/
+
+@media screen and (min-width: 700px) {
+  #contactme {
+    font-size: 25px;
+  }
+}
+
+input {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  label {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+}
